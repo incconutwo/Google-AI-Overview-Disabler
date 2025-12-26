@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Overview Disabler</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="logo">
+        <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+      </span>
+      <span class="title">Web Only</span>
+    </div>
+    
+    <div class="description">
+      Automatically switch to Web results to disable AI Overview
+    </div>
+    
+    <div class="toggle-row">
+      <span class="toggle-label">Enable redirect</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="enableToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+    
+    <div class="status" id="status">
+      <span class="status-dot active"></span>
+      <span class="status-text">Active</span>
+    </div>
+    
+    <div class="footer">
+      made by <a href="https://x.com/tnemoroccan" target="_blank">@tnemoroccan</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
