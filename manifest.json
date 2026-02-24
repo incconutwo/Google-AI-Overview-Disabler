@@ -1,14 +1,24 @@
 {
   "manifest_version": 3,
-  "name": "Google AI Overview Disabler",
-  "version": "1.0",
-  "description": "Automatically switches to Google Web results to disable AI Overview",
+  "name": "Classic Search for Google",
+  "version": "1.0.2",
+  "description": "Restore the classic, distraction-free Google Web results. Simple, fast, and no AI clutter.",
   "permissions": [
     "declarativeNetRequest",
     "storage"
   ],
   "host_permissions": [
     "*://*.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/search*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
   ],
   "declarative_net_request": {
     "rule_resources": [

@@ -1,0 +1,39 @@
+# Chrome Web Store Description
+
+## Short Description (132 characters max)
+Automatically disables Google AI Overview by switching to clean "Web" results. No more AI clutter — just classic search results.
+
+---
+
+## Detailed Description
+
+**Tired of Google's AI Overviews cluttering your search results?**
+
+Google AI Overview Disabler automatically redirects your searches to the classic "Web" tab, giving you clean, traditional search results without AI-generated content.
+
+### ✨ What it does
+When you search on Google, this extension automatically adds the `udm=14` parameter to your URL — the same as clicking the "Web" tab manually, but instant and automatic.
+
+**Before:** Ads → AI Overview → More Ads → Sponsored → Finally, results  
+**After:** Just the search results you're looking for
+
+### 🚀 Features
+• **One-click toggle** — Easily enable or disable from the popup  
+• **Lightning fast** — Uses Chrome's declarativeNetRequest API (no slow scripts)  
+• **Privacy-friendly** — No data collection, no tracking, no analytics  
+• **Lightweight** — Minimal permissions, tiny footprint  
+
+### 🔒 Permissions explained
+• **declarativeNetRequest** — Required to redirect URLs at the network level  
+• **storage** — Saves your on/off preference  
+• **google.com access** — Only modifies Google search URLs  
+
+### 💡 How it works
+The extension intercepts Google search requests and adds `udm=14` to the URL, which tells Google to show the "Web" results view instead of the default AI-enhanced view.
+
+---
+
+**Open source:** github.com/incconutwo/Google-AI-Overview-Disabler
+
+Using this in your school district? I'd love to hear your feedback! incconutwousa@gmail.com
+Made by @tnemoroccan
